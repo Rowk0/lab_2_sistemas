@@ -1,0 +1,5 @@
+getpid() para obtener el pid del proceso.
+fork() crea un clon de la funcion.
+al hacer uso de la función fork(), tenemos que arreglárnoslas para que mediante un mismo
+código, dos procesos hagan cosas distintas. La forma de afrontar dicho problema
+es mediante el uso de if

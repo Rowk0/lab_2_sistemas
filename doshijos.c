@@ -1,4 +1,5 @@
 #include <sys/types.h>
+#include <sys/wait.h>
 #include <unistd.h>
 #include <stdio.h>
 
@@ -11,7 +12,7 @@ int main (int argc, char *argv[])
    { /*Hijo*/
       printf("Soy el primer hijo (%d, hijo de %d)\n", getpid(),getppid());
    }
-
+   
    else
    { /*Padre*/
       if ((pid2=fork()) == 0)

@@ -32,22 +32,22 @@ int main(int argc, char *argv[])
         x1 = (-b + sqrt(discriminante)) / (2 * a);
         x2 = (-b - sqrt(discriminante)) / (2 * a);
         printf("Raices reales y distintas:\n");
-        printf("x1 = %.2lf\n", x1);
-        printf("x2 = %.2lf\n", x2);
+        printf("x1 = %.2lf | PID: %d \n", x1, getpid());
+        printf("x2 = %.2lf | PID: %d \n", x2, getpid());
     }
     // Caso 2: Una única raíz real (doble)
     else if (discriminante == 0) {
         x1 = -b / (2 * a);
         printf("Raiz real unica (doble):\n");
-        printf("x1 = x2 = %.2lf\n", x1);
+        printf("x1 = x2 = %.2lf | PID: %d \n", x1, getpid());
     }
     // Caso 3: Raíces complejas / imaginarias
     else {
         parteReal = -b / (2 * a);
         parteImaginaria = sqrt(-discriminante) / (2 * a);
         printf("Raices complejas / imaginarias:\n");
-        printf("x1 = %.2lf + %.2lfi\n", parteReal, parteImaginaria);
-        printf("x2 = %.2lf - %.2lfi\n", parteReal, parteImaginaria);
+        printf("x1 = %.2lf + %.2lfi | PID:%d \n", parteReal, parteImaginaria, getpid());
+        printf("x2 = %.2lf - %.2lfi | PID:%d \n", parteReal, parteImaginaria, getpid());
     }
 
     return 0;

@@ -49,4 +49,6 @@ int main(int argc, char *argv[])
         printf("x1 = %.2lf + %.2lfi\n", parteReal, parteImaginaria);
         printf("x2 = %.2lf - %.2lfi\n", parteReal, parteImaginaria);
     }
+
+    return 0;
 }

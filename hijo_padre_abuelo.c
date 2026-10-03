@@ -24,7 +24,7 @@ int main (int argc, char *argv[])
 
    else
    {
-      wait (&status1); //abuelo espera a que su hijo(padre) termine su ejecucion.
+      wait (&status1); //abuelo espera a que su hijo(padre) termine su ejecucion
       printf("Soy el abuelo (%d, hijo de %d)\n",getpid(),getppid());
    }
 
